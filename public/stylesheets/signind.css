@@ -1,0 +1,14 @@
+body{
+	background-color:#272727;
+}
+button{
+	background-color:#272727;
+	color:#FF6A0C;
+	padding:2px;
+	border: 1px solid #FF6A0C;
+	box-shadow: 0px 3px 2px 0px hsla(100,0%,0%,.7);
+}
+button:hover{
+	background-color:#FF6A0C;
+	color:#272727;
+}

@@ -1,0 +1,21 @@
+input[type='text']{
+	background-color:#e5e5e5;
+	text-align:left;
+	width:35%;
+	position:relative;
+	margin-bottom: 1%;
+}
+input[type='text']:hover{
+	background-color:#FFFFFF;
+}
+input[type='submit']:hover{
+	background-color:#FFFFFF;
+}
+#info{
+	width:auto;
+	position: relative;
+	box-sizing: border-box;
+}
+#navbar{
+	margin-bottom:20%;
+}

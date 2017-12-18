@@ -1,0 +1,30 @@
+doctype html
+html
+head
+	div#navbar
+		ul
+			li.home
+				a(href='/home') Home
+			li
+				a(href='/playlist') Playlist
+			li
+				a(href='/tracksearch') Track Search
+			li
+				a(href='/genresearch') Genre Search
+			li.dropdown
+				a.dropbtn WebLinks
+				div.dropdown-content
+					a(href='https://www.github.com') GitHub
+					a(href='https://www.pugjs.org/') Pug
+					a(href='https://www.material.io/') Material Design
+			li.dropdown
+				a.dropbtn WebLinks 2
+				div.dropdown-content
+					a(href='https://www.reddit.com') Reddit
+					a(href='https://www.Youtube.com/') Youtube
+					a(href='https://www.npmjs.com/') NPM
+	script(src='/javascripts/jquery.js')
+	link(rel='stylesheet', href='/stylesheets/style.css')
+	link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css')
+	body
+	block content

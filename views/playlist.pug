@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	title= title
+	if(playlist_rows.length > 0)
+		table
+			thead
+				tr
+					th ID
+					th Name
+			tbody: each val in playlist_rows
+				tr
+					td= val.ID
+					td= val.Playlist_Name
+		p Enter the ID of a playlist.
+		form(action='/playlist', method='post')
+			input(type='number', name='userid')
+			input#hover(type='submit', value='OK')
+		hr
+		if(track_list)
+			if(track_list.length > 0)
+				table
+					thead
+						tr
+							th Track Names
+					tbody: each val in track_list
+						tr
+							td= val.name
+			else
+				h2 Strange, there are no tracks in this playlist.

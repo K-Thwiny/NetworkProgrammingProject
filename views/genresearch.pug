@@ -1,0 +1,36 @@
+extends layout
+
+block content
+	title= title
+	if(genre_rows.length > 0)
+		table
+			thead
+				tr
+					th ID
+					th Genres
+			tbody: each val in genre_rows
+				tr
+					td= val.GenreId
+					td= val.Name
+		p Enter the ID of a playlist.
+		form(action='/genresearch', method='post')
+			input#hover(type='number', name='genreid')
+			input#hover(type='submit', value='OK')
+		hr
+		if(track_genres)
+			if(track_genres.length > 0)
+				table
+					thead
+						tr
+							th Track Name
+							th Album
+							th Media Type
+							th Genres
+					tbody: each val in track_genres
+						tr
+							td= val.TrackName
+							td= val.AlbumTitle
+							td= val.MediaType
+							td= val.Genres
+			else
+				h2 Strange, there are no tracks in this playlist.

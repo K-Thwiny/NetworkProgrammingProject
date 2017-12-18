@@ -1,0 +1,29 @@
+img{
+	height:17%;
+	width:17%;
+	margin-bottom:2%;
+}
+body{
+	background-color:#272727;
+}
+input{
+	padding: 4px;
+	background-color:white;
+	border-color:grey;
+	width: 15%;
+	text-align:left;
+	padding:10px;
+	font-size:.9em;
+	display:block;
+	border: 0px;
+}
+input[type='submit']{
+	margin-top:1%;
+	width:7%;
+}
+a{
+	margin-top:10px;
+	color:#e5e5e5;
+	text-decoration:none;
+	font-size:.9em;
+}

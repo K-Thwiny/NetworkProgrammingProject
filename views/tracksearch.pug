@@ -1,0 +1,24 @@
+extends layout
+
+
+block content
+	link(rel='stylesheet', href='/stylesheets/tracksearch.css')
+	title #{title}
+	div#info
+		form(action='/tracksearch', method='post')
+			input(type='text', name='search')
+			input#hover(type='submit', value='OK')
+		if(tracks)
+			script.
+				$("#info").animate({bottom: "200px"}, 2000);
+			if(tracks.length > 0)
+				h3 Search results:
+				table
+					thead
+						tr
+							th Track Name
+					tbody: each val in tracks
+						tr
+							td= val.Name
+			else
+				h2 No results found.
